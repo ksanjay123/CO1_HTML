@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Style for the nested table */
+        .nested-table td {
+            border: none;
+            padding: 0;
+        }
+        .nested-table table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Nested Table</h1>
+    
+    <p>This program demonstrates a table within a table, a structure known as a nested table.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Subject Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td class="nested-table">
+                    <table>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td>Math</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>B</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td class="nested-table">
+                    <table>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td>History</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>A-</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
